@@ -10,20 +10,7 @@ import { AuditReportsPage } from '../audit-reports/audit-reports';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
-
-  }
-
-  onGoToSchedules() {
-    this.navCtrl.push(SchedulesPage);
-  }
-
-  onGoToMaps() {
-    this.navCtrl.push(MapsPage);
-  }
-
-  onGoToAuditReports(){
-    this.navCtrl.push(AuditReportsPage);
-  }
-
+  schedulePage = SchedulesPage;
+  mapsPage = MapsPage;
+  auditReportPage = AuditReportsPage;
 }

@@ -4,9 +4,9 @@
       WAYST
     </ion-title>
 
-    <button ion-button (click)="onGoToSchedules()">Schedules</button>
-    <button ion-button (click)="onGoToMaps()">Maps</button>
-    <button ion-button (click)="onGoToAuditReports()">Audit Reports</button>
+    <button ion-button [navPush]="schedulePage">Schedules</button>
+    <button ion-button [navPush]="mapsPage">Maps</button>
+    <button ion-button [navPush]="auditReportPage">Audit Reports</button>
   </ion-navbar>
 </ion-header>
 
