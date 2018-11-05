@@ -1,12 +1,34 @@
-<ion-header>
+<ion-split-pane when="md">
+  <!--  our side menu  -->
+  <ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons left>
+            <button navPop >
+              <ion-icon name="arrow-back">
 
-  <ion-navbar>
-    <ion-title>Audit Reports</ion-title>
-  </ion-navbar>
+              </ion-icon>
+            </button>
+          </ion-buttons>
+        <ion-title>Audit Reports</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
-</ion-header>
+    <ion-content>
+        <ion-list>
+            <button ion-item *ngFor="let item of auditReportCollection">
+                <h2>
+                    {{ item.title }}
+                </h2>                
+            </button>
+        </ion-list>
+    </ion-content>
+  </ion-menu>
 
+  <!-- the main content -->
+  <ion-nav [root]="root" main #content>
 
-<ion-content padding>
+    
+  </ion-nav>
 
-</ion-content>
+</ion-split-pane>
