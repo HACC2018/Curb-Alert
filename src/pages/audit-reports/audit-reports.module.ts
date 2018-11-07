@@ -9,5 +9,8 @@ import { AuditReportsPage } from './audit-reports';
   imports: [
     IonicPageModule.forChild(AuditReportsPage),
   ],
+  exports: [
+    AuditReportsPage
+  ]
 })
-export class AuditReportsPageModule {}
+export class AuditReportsPageModule { }

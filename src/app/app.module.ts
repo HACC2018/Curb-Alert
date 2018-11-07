@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { SchedulesPage } from '../pages/schedules/schedules';
 import { MapsPage } from '../pages/maps/maps';
 import { AuditReportsPage } from '../pages/audit-reports/audit-reports';
+import { AuditReportPage } from '../pages/audit-report/audit-report';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AuditReportsPage } from '../pages/audit-reports/audit-reports';
     SchedulesPage,
     MapsPage,
     AuditReportsPage,
+    AuditReportPage
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { AuditReportsPage } from '../pages/audit-reports/audit-reports';
     SchedulesPage, 
     MapsPage,
     AuditReportsPage,
+    AuditReportPage
   ],
   providers: [
     StatusBar,
