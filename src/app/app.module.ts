@@ -10,6 +10,10 @@ import { HomePage } from '../pages/home/home';
 import { ScheduleitemsPage } from '../pages/scheduleitems/scheduleitems';
 import { MapsPage } from '../pages/maps/maps';
 import { AuditReportsPage } from '../pages/audit-reports/audit-reports';
+import { NavigationBarPage } from '../pages/navigation-bar/navigation-bar';
+import { FooterPage } from '../pages/footer/footer';
+import { NavigationBarDesktopPage } from '../pages/navigation-bar-desktop/navigation-bar-desktop';
+
 import { AuditReportPage } from '../pages/audit-report/audit-report';
 import { GreenbinPage } from '../pages/greenbin/greenbin';
 import { BlackbinPage } from '../pages/blackbin/blackbin';
@@ -17,6 +21,9 @@ import { BluebinPage } from '../pages/bluebin/bluebin';
 import { BulkyitemsPage } from '../pages/bulkyitems/bulkyitems';
 import { RecyclemapPage } from '../pages/recyclemap/recyclemap';
 import { DonationmapPage } from '../pages/donationmap/donationmap';
+
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -27,6 +34,7 @@ import { DonationmapPage } from '../pages/donationmap/donationmap';
     ScheduleitemsPage,
     MapsPage,
     AuditReportsPage,
+
     AuditReportPage,
     GreenbinPage,
     BlackbinPage,
@@ -35,10 +43,17 @@ import { DonationmapPage } from '../pages/donationmap/donationmap';
     RecyclemapPage,
     DonationmapPage,
 
+
+    NavigationBarPage, 
+    FooterPage,
+    NavigationBarDesktopPage,
+    AuditReportPage
+
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ReactiveFormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -48,6 +63,7 @@ import { DonationmapPage } from '../pages/donationmap/donationmap';
     ScheduleitemsPage,
     MapsPage,
     AuditReportsPage,
+
     AuditReportPage,
     GreenbinPage,
     BlackbinPage,
@@ -55,6 +71,11 @@ import { DonationmapPage } from '../pages/donationmap/donationmap';
     BulkyitemsPage,
     RecyclemapPage,
     DonationmapPage,
+
+    NavigationBarPage, 
+    FooterPage,
+    NavigationBarDesktopPage,
+    AuditReportPage
 
   ],
   providers: [
