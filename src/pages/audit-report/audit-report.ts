@@ -32,13 +32,14 @@ export class AuditReportPage implements OnInit{
 
         this.item = this.navParams.get('myData');
         this.categoriesCollection = categories;
-       // this.waysteForm = wasteItems;
-
     }
     
     ngOnInit() {
         this.auditReportForm = this.fb.group({
-            test: '',
+            location: '',
+            existingItems: this.fb.array([
+                this.createItem()
+            ]),
             wasteItem: this.fb.array([
                this.createItem()
             ])
@@ -53,6 +54,4 @@ export class AuditReportPage implements OnInit{
             volume: ''
         });
     }
-
-
 }

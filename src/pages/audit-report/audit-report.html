@@ -13,7 +13,39 @@
                 <div class="content">
                     <form id="container" [formGroup]="auditReportForm">
 
-                        <div formArrayName="wasteItem" *ngFor="let item of auditReportForm.get('wasteItem').controls; let i=index">
+                        <div padding formArrayName="wasteItem" *ngFor="let item of auditReportForm.get('wasteItem').controls; let i=index">
+
+                            <h5>Items of Interest</h5>
+                            <ion-list>
+                                <ion-item>
+                                    <ion-label>
+                                        Starbucks Cups | 3 lbs
+                                    </ion-label>
+                                    4 lbs
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label>
+                                        Plastic to-go Cups | 2 lbs
+                                    </ion-label>
+                                   <div></div>
+                                </ion-item>
+                            </ion-list>
+
+                            <h5>Paper</h5>
+                            <ion-list>
+                                <ion-item>
+                                    <ion-label>
+                                        Recyclable Paper | 9.6 lbs
+                                    </ion-label>
+                                    4 lbs
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label>
+                                        Non-Recyclable Paper | 16.75 lbs
+                                    </ion-label>
+                                   <div></div>
+                                </ion-item>
+                            </ion-list>
 
                             <ion-item-divider color="light">Add More Items</ion-item-divider>
                             <div [formGroupName]="i">
@@ -51,19 +83,21 @@
 
                             </div>
                         </div>
+
+                        <button ion-button color="dark" type="submit">Submit</button>
 
                     </form>
 
                 </div>
             </li>
             <li>
+                <br>
+                <br>
                 <input type="radio" id="radio-2" name="radio-accordion" checked="checked" />
                 <label for="radio-2">Bag&nbsp;Two</label>
                 <div class="content">
                     <form id="container" [formGroup]="auditReportForm">
-
                         <div formArrayName="wasteItem" *ngFor="let item of auditReportForm.get('wasteItem').controls; let i=index">
-
                             <ion-item-divider color="light">Add More Items</ion-item-divider>
                             <div [formGroupName]="i">
                                 <ion-list>
@@ -97,19 +131,12 @@
 
                                     </ion-item>
                                 </ion-list>
-
+                                <button ion-button color="dark" type="submit">Submit</button>
                             </div>
                         </div>
-
                     </form>
-
                 </div>
             </li>
-
-
-
-
         </ul>
     </div>
-
 </ion-content>

@@ -55,12 +55,6 @@ page-audit-report{
     color:#333;
     margin:0 0 10px;
 }
-.accordion h3 {
-    color:#542437;
-    padding:0;
-    margin:10px 0;
-}
-
 
 /* Vertical */
 .vertical ul li {
@@ -73,14 +67,12 @@ page-audit-report{
 .vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
     border-bottom:0;
 }
-.vertical ul li label:hover {
-   
-}
+
 .vertical ul li .content {
     height:0px;
     border-top:0;
 }
 .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
-    height:300px;
+    height:500px;
 }
 }
