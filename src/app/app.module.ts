@@ -13,6 +13,10 @@ import { NavigationBarPage } from '../pages/navigation-bar/navigation-bar';
 import { FooterPage } from '../pages/footer/footer';
 import { NavigationBarDesktopPage } from '../pages/navigation-bar-desktop/navigation-bar-desktop';
 
+import { AuditReportPage } from '../pages/audit-report/audit-report';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -22,11 +26,13 @@ import { NavigationBarDesktopPage } from '../pages/navigation-bar-desktop/naviga
     AuditReportsPage,
     NavigationBarPage, 
     FooterPage,
-    NavigationBarDesktopPage
+    NavigationBarDesktopPage,
+    AuditReportPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ReactiveFormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +43,8 @@ import { NavigationBarDesktopPage } from '../pages/navigation-bar-desktop/naviga
     AuditReportsPage,
     NavigationBarPage, 
     FooterPage,
-    NavigationBarDesktopPage
+    NavigationBarDesktopPage,
+    AuditReportPage
   ],
   providers: [
     StatusBar,

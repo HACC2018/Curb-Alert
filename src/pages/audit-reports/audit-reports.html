@@ -1,4 +1,4 @@
-<ion-split-pane when="md">
+<ion-split-pane when="(min-width: 550px)">
   <!--  our side menu  -->
   <ion-menu [content]="content">
     <ion-header>
@@ -16,17 +16,17 @@
 
     <ion-content>
         <ion-list>
-            <button ion-item *ngFor="let item of auditReportCollection">
+            <ion-item *ngFor="let item of auditReportCollection" (click)="setContent(item)">
                 <h2>
                     {{ item.title }}
                 </h2>                
-            </button>
+            </ion-item>
         </ion-list>
     </ion-content>
   </ion-menu>
 
   <!-- the main content -->
-  <ion-nav [root]="root" main #content>
+  <ion-nav [root]="rootPage" main #content>
 
     
   </ion-nav>
