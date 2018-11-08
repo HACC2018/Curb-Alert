@@ -9,6 +9,9 @@ import { HomePage } from '../pages/home/home';
 import { SchedulesPage } from '../pages/schedules/schedules';
 import { MapsPage } from '../pages/maps/maps';
 import { AuditReportsPage } from '../pages/audit-reports/audit-reports';
+import { NavigationBarPage } from '../pages/navigation-bar/navigation-bar';
+import { FooterPage } from '../pages/footer/footer';
+import { NavigationBarDesktopPage } from '../pages/navigation-bar-desktop/navigation-bar-desktop';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { AuditReportsPage } from '../pages/audit-reports/audit-reports';
     SchedulesPage,
     MapsPage,
     AuditReportsPage,
+    NavigationBarPage, 
+    FooterPage,
+    NavigationBarDesktopPage
   ],
   imports: [
     BrowserModule,
@@ -29,6 +35,9 @@ import { AuditReportsPage } from '../pages/audit-reports/audit-reports';
     SchedulesPage, 
     MapsPage,
     AuditReportsPage,
+    NavigationBarPage, 
+    FooterPage,
+    NavigationBarDesktopPage
   ],
   providers: [
     StatusBar,
