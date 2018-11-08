@@ -1,0 +1,31 @@
+page-navigation-bar-desktop {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    #nav-image {
+        float: left;
+        padding: 0 10px;
+        img {
+            height: 60px;
+        }
+        
+    }
+    #nav-buttons {
+        position: relative;
+        top: 50%;
+        transform: perspective(1px) translateY(20%);
+        float: right;
+        padding-right: 10px;
+
+        button {
+            background-color: #f8f8f8;
+            box-shadow: none;
+            color: #535656;
+        }
+
+        button:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+        
+    }
+}

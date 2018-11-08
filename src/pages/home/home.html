@@ -1,15 +1,38 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      WAYST
-    </ion-title>
-
-    <button ion-button [navPush]="schedulePage">Schedules</button>
-    <button ion-button [navPush]="mapsPage">Maps</button>
-    <button ion-button [navPush]="auditReportPage">Audit Reports</button>
-  </ion-navbar>
-</ion-header>
+<page-navigation-bar-desktop hideWhen="android,ios"></page-navigation-bar-desktop>
 
 <ion-content padding>
- 
+  <div id="header-section">
+    
+    <div class="layer">
+        <img src="../../assets/imgs/Recycle_Outline-white.svg"/>
+        <h1>WAYST</h1>
+        <h2>A new beginning to countering waste.</h2>
+    </div>    
+  </div>
+  <div id="section-1">
+    <h1>WAYST</h1>
+    <p>If there is waste, there is a WAY! Time doesn't stop, and that means waste doesn't either! WAYST is a web and mobile application made for you to track waste and help reduce it. Use WAYST to gain knowledge on how to handle your waste and how to reduce it.</p>
+    <p>Performing a waste audit? No problem! WAYST makes it easy to log large amounts of data with our easy-to-use online forms available on both desktop and mobile applications!</p>
+    <p>The next step to reducing waste is in our hands. If there is waste, there will always be a way!</p>
+  </div>
+  <div id="section-2">
+    <h1>A tool made by us, just for you.</h1>
+
+    <div id="feature-wrapper">
+        <div id="image-1">
+          <img src="../../assets/imgs/calendar-gray.svg"/>
+          <p>View schedules for residential trash bin pick up, bulky item pick up and more.</p>
+        </div>
+        <div id="image-2">
+          <img src="../../assets/imgs/form-gray.svg"/>
+          <p>Record data for waste audits through an easy-to-use online form.</p>
+        </div>
+        <div id="image-3">
+          <img src="../../assets/imgs/location-gray.svg"/>
+          <p>Look up locations of recycling centers, donation organizations and trash drop off locations nearest to you.</p>
+          </div>
+    </div>
+    
+  </div>
+  <page-footer></page-footer>
 </ion-content>

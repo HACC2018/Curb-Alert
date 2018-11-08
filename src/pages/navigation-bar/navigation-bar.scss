@@ -1,0 +1,36 @@
+page-navigation-bar {
+    ion-navbar {
+        height: 70px;
+    }
+
+    #nav-links {
+        border: 5px solid red;
+        float: right;
+
+        button {
+            display: inline-block;
+        }
+    }
+
+    #logo-icon {
+        //float: left;
+        height: 100%;
+        display: inline-block;
+        padding: 5px 10px;
+        #logo-image {
+            height: 60px;
+        }
+    }
+
+    #header {
+        height: 70%;
+        padding: 0;
+        margin: 0;
+        border: 5px solid green;
+    }
+
+    .scroll-content {
+        padding: 0;
+        margin: 0;
+    }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-74,-4.5)">
+        <path d="M479.607,90L131,90L131,719L650,719L650,566.504L650,569.39" style="fill:none;stroke:rgb(83,86,86);stroke-width:28px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-74,-4.5)">
+        <path d="M650,508.39L650,382.681" style="fill:none;stroke:rgb(83,86,86);stroke-width:28px;"/>
+    </g>
+    <g transform="matrix(1,0,0,0.508889,-74,122.439)">
+        <path d="M650,382.681L650,258.472" style="fill:none;stroke:rgb(83,86,86);stroke-width:35.29px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-74,-4.5)">
+        <g id="Layer1">
+            <path d="M648,257L478,251.753L482,92L648,257Z" style="fill:none;stroke:rgb(83,86,86);stroke-width:28px;"/>
+        </g>
+    </g>
+    <g id="Layer2">
+        <g transform="matrix(1,0,0,1,-57.5,11)">
+            <path d="M202,286L546,286" style="fill:none;stroke:rgb(83,86,86);stroke-width:28px;"/>
+        </g>
+        <g transform="matrix(0.753634,0,0,1,-7.23401,98)">
+            <path d="M202,286L546,286" style="fill:none;stroke:rgb(83,86,86);stroke-width:31.62px;"/>
+        </g>
+        <g transform="matrix(0.753634,0,0,1,-7.23401,185)">
+            <path d="M202,286L546,286" style="fill:none;stroke:rgb(83,86,86);stroke-width:31.62px;"/>
+        </g>
+        <g transform="matrix(0.753634,0,0,1,-7.73401,272)">
+            <path d="M202,286L546,286" style="fill:none;stroke:rgb(83,86,86);stroke-width:31.62px;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-57.5,359)">
+            <path d="M202,286L546,286" style="fill:none;stroke:rgb(83,86,86);stroke-width:28px;"/>
+        </g>
+    </g>
+    <g id="Layer3" transform="matrix(1,0,0,1,19,20)">
+        <path d="M451,451L688,221L755,288L521,522" style="fill:rgb(83,86,86);stroke:rgb(83,86,86);stroke-width:28px;"/>
+        <path d="M451,451L442,533L521,522L451,451Z" style="fill:rgb(83,86,86);stroke:rgb(83,86,86);stroke-width:28px;"/>
+    </g>
+</svg>

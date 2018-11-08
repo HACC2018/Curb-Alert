@@ -1,3 +1,97 @@
 page-home {
 
+    #header-section {
+        background-image: url('../../assets/imgs/kaneohe.JPG');
+        background-position:center;
+	    background-repeat:no-repeat;
+	    background-size:cover;
+        background-repeat: none;
+        height: 100vh;
+        position: relative;
+
+        .layer {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            color: white;
+            
+            h1 {
+                font-size: 6em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            img {
+                margin-top: 11%;
+                height: 50%;
+            }
+        }
+    }
+
+    #section-1, #section-2 {
+        color: #535656;
+        // height: 500px;
+
+        padding: 10% 15%;
+        h1 {
+            font-size: 3em;
+            font-family: 'Raleway', sans-serif;
+        }
+     
+         h1:after {
+             background: none repeat scroll 0 0 #4CAF50;
+             bottom: -10px;
+             content: "";
+             display: block;
+             height: 8px;
+             position: relative;
+             width: 100px;
+             margin-bottom: 8%;
+         }
+
+         p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.1em;
+         }
+    }
+
+    #section-2 {
+        padding-bottom: 15%;
+        background-color: #f8f8f8;
+        #feature-wrapper {
+            width:100%;
+            text-align: center;
+
+            p{
+                text-align: left;
+            }
+        }
+
+        #image-1 {
+            float: left;
+        }
+
+        #image-3 {
+            float:right;
+        }
+        #image-1, #image-2, #image-3 {
+            display: inline-block;
+            width: 23.3%;
+
+            img {
+                width: 60%;
+            }
+        }
+    }
+
+    .scroll-content {
+        padding: 0 !important;
+    }
 }
