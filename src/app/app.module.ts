@@ -10,6 +10,7 @@ import { SchedulesPage } from '../pages/schedules/schedules';
 import { MapsPage } from '../pages/maps/maps';
 import { AuditReportsPage } from '../pages/audit-reports/audit-reports';
 import { AuditReportPage } from '../pages/audit-report/audit-report';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AuditReportPage } from '../pages/audit-report/audit-report';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ReactiveFormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
