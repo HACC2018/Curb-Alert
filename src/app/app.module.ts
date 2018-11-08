@@ -4,21 +4,37 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { schedules } from '../pages/schedules/schedules';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { SchedulesPage } from '../pages/schedules/schedules';
+import { ScheduleitemsPage } from '../pages/scheduleitems/scheduleitems';
 import { MapsPage } from '../pages/maps/maps';
 import { AuditReportsPage } from '../pages/audit-reports/audit-reports';
 import { AuditReportPage } from '../pages/audit-report/audit-report';
+import { GreenbinPage } from '../pages/greenbin/greenbin';
+import { BlackbinPage } from '../pages/blackbin/blackbin';
+import { BluebinPage } from '../pages/bluebin/bluebin';
+import { BulkyitemsPage } from '../pages/bulkyitems/bulkyitems';
+import { RecyclemapPage } from '../pages/recyclemap/recyclemap';
+import { DonationmapPage } from '../pages/donationmap/donationmap';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    SchedulesPage,
+    schedules,
+    ScheduleitemsPage,
     MapsPage,
     AuditReportsPage,
-    AuditReportPage
+    AuditReportPage,
+    GreenbinPage,
+    BlackbinPage,
+    BluebinPage,
+    BulkyitemsPage,
+    RecyclemapPage,
+    DonationmapPage,
+
   ],
   imports: [
     BrowserModule,
@@ -28,10 +44,18 @@ import { AuditReportPage } from '../pages/audit-report/audit-report';
   entryComponents: [
     MyApp,
     HomePage,
-    SchedulesPage, 
+    schedules,
+    ScheduleitemsPage,
     MapsPage,
     AuditReportsPage,
-    AuditReportPage
+    AuditReportPage,
+    GreenbinPage,
+    BlackbinPage,
+    BluebinPage,
+    BulkyitemsPage,
+    RecyclemapPage,
+    DonationmapPage,
+
   ],
   providers: [
     StatusBar,

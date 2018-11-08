@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { schedules } from './schedules';
+import { BlackbinPage } from './blackbin';
 
 @NgModule({
   declarations: [
-    schedules,
+    BlackbinPage,
   ],
   imports: [
-    IonicPageModule.forChild(schedules),
+    IonicPageModule.forChild(BlackbinPage),
   ],
 })
-export class MapsPageModule {}
+export class BlackbinPageModule {}

@@ -1,16 +1,30 @@
-<ion-header>
+<ion-split-pane>
+  <!--  our side menu  -->
+  <ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons left>
+            <button navPop >
+              <ion-icon name="arrow-back">
+  
+              </ion-icon>
+            </button>
+          </ion-buttons>
+        <ion-title>Schedules</ion-title>
+      </ion-toolbar>
+    </ion-header>
+      <ion-content>
+      <ion-list>
+          <ion-item (click)="opengreenbin()" >Green Bin</ion-item>
+          <ion-item  (click)="openblackbin()">Black Bin</ion-item>
+          <ion-item  (click)="openbluebin()">Blue Bin</ion-item> 
+          <ion-item  (click)="openbulkyitems()">Bulky Items</ion-item>             
+      </ion-list>
+      </ion-content>    
+  </ion-menu>
+  <!-- the main content -->
+  <ion-nav [root]="rootPage" main #content></ion-nav>
+  
+  </ion-split-pane>
 
-  <ion-navbar>
-    <ion-title>Schedules</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
-</ion-content>
-
-<ion-footer padding>
-  <p>The Footer</p>
-</ion-footer>
+  

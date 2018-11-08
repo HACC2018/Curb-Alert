@@ -1,12 +1,30 @@
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>Maps</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
-</ion-content>
+<ion-split-pane>
+    <!--  our side menu  -->
+    <ion-menu [content]="content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons left>
+              <button navPop >
+                <ion-icon name="arrow-back">
+    
+                </ion-icon>
+              </button>
+            </ion-buttons>
+          <ion-title>Maps</ion-title>
+        </ion-toolbar>
+      </ion-header>
+        <ion-content>
+        <ion-list>
+          <div class="maplist">
+            <ion-item  (click)="openrecyclemap()">Recycling Centers</ion-item>
+            <ion-item  (click)="opendonationmap()">Donation Centers</ion-item> 
+          </div>
+        </ion-list>
+        </ion-content>    
+    </ion-menu>
+    <!-- the main content -->
+    <ion-nav [root]="rootPage" main #content></ion-nav>
+    
+    </ion-split-pane>
+  
+    

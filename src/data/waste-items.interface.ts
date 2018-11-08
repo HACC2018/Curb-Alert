@@ -1,7 +1,7 @@
 export interface WasteItems{
     id: string;
-    categoryTypeId: number;
     name: string;
+    categoryTypeId: number;
     weight: number;
     volume: string;
 }

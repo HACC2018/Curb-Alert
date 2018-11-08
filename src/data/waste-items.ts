@@ -1,12 +1,5 @@
 export default [
     {
-        id: 1001,
-        name: 'Recyclable Paper',
-        categoryTypeId: 1,
-        weight: 10.5,
-        volume: '23',
-    },
-    {
         id: 1002,
         name: 'Non-Recyclable Paper',
         categoryTypeId: 1,
