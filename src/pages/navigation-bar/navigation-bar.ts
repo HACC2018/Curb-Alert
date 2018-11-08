@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Nav } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import { SchedulesPage } from '../schedules/schedules';
+import { schedules } from '../schedules/schedules';
 import { MapsPage } from '../maps/maps';
 import { AuditReportsPage } from '../audit-reports/audit-reports';
 
@@ -21,7 +21,7 @@ export class NavigationBarPage {
   @ViewChild(Nav) nav:Nav;
   homePage = HomePage;
   navigationPage = NavigationBarPage;
-  schedulesPage = SchedulesPage;
+  schedules = schedules;
   mapsPage = MapsPage;
   auditFormsPage = AuditReportsPage;
 
@@ -37,7 +37,7 @@ export class NavigationBarPage {
   }
 
   gotToSchedules(){
-    this.nav.setRoot(SchedulesPage);
+    this.nav.setRoot(schedules);
   }
 
   goToForms() {
